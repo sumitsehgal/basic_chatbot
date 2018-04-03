@@ -5,7 +5,7 @@ var io = require('socket.io')(server);
 var api = require('./api');
 
 var conn = function() {
-  server.listen(PORT);
+  server.listen(8010);
 
   app.get('/', function (req, res) {
     res.sendfile(__dirname + '/index.html');
